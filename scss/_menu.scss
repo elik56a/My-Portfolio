@@ -1,0 +1,37 @@
+//menu buttons
+
+.btn-menu{
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include easeOut;
+
+    .btn-line{
+        width: 28px;
+        height: 3px;
+        margin-bottom: 5px;
+        background: #fff;
+        @include easeOut;
+        
+    }
+    //Rotate the humburger into X
+    &.close{
+        transform: rotate(180deg);
+
+        // Rotate the first and third line - and make x, hide the seconde
+        .btn-line{
+            //line 11
+            &:nth-child(1){
+               transform: rotate(45deg)  translate(5px, 5px);
+               }
+            &:nth-child(2){
+               opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg)  translate(7px, -6px);
+             }  
+        }
+    }
+}
