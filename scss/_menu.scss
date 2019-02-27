@@ -35,3 +35,100 @@
         }
     }
 }
+
+//Menu Overley
+.menu{
+    position: fixed;
+    top: 0;
+    width:100% ;
+    opacity: 0.9;
+    visibility: hidden;
+
+   &.show{
+    visibility: visible;
+   }
+
+   //split the nav-item, and branding
+   &-branding,
+   &-nav {
+       display: flex;
+       flex-flow: column wrap;
+       align-items: center;
+       justify-content: center;
+       float: left;
+       width: 50%;
+       height: 100vh;
+       overflow: hidden;
+   }
+   //nav 50% side
+   &-nav{
+        margin: 0;
+         padding: 0;
+         background: darken($primary-color, 5);
+         list-style: none;
+         transform: translate3d(0,-100%,0);  
+        @include easeOut;
+
+        &.show{
+            //slide from the top
+            transform: translate3d(0,0,0);
+        }
+     
+   }
+
+    // transform the links
+    .nav-items{
+        transform: translate3d(600px,0,0);  
+        @include easeOut;
+        &.show{
+            //slide from the right
+            transform: translate3d(0,0,0);
+        }
+        &.active > a{
+            color: $second-color;
+        }
+    }
+    .nav-links{
+        text-transform: uppercase;
+        font-size: 30px;
+        padding: 1rem 0;
+        font-weight: 300;
+        color:white;
+        @include easeOut;
+
+    &:hover{
+        color: $second-color;
+        @include easeOut;
+    }
+    }
+
+
+   //branding 50% side
+   &-branding{
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 1);
+    transform: translate3d(0,100%,0);  
+   @include easeOut;
+
+    &.show{
+        //slide from the bottom
+        transform: translate3d(0,0,0); 
+        }
+        .face-img{
+            width: 250px;
+            height: 250px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwisBhLRLJ8qwa_KgPFpoci2MLwJNBQ1KfpU90Vadj3Kv3_SCJ");
+            border-radius: 50%;
+            border: 3px solid $second-color;
+        }
+   }
+  
+}
+
+//delay each nav bar at 0.1s
+@for $i from 1 through 4{
+    .nav-items:nth-child(#{$i}){
+        transition-delay: $i* 0.1s;
+    }
+}

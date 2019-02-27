@@ -20,6 +20,76 @@
     .btn-menu.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: #373737;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .nav-items {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-items.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-items.active > a {
+      color: #f0e116; }
+  .menu .nav-links {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: white;
+    transition: all 0.5s ease-out; }
+    .menu .nav-links:hover {
+      color: #f0e116;
+      transition: all 0.5s ease-out; }
+  .menu-branding {
+    margin: 0;
+    padding: 0;
+    background: #414141;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .face-img {
+      width: 250px;
+      height: 250px;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwisBhLRLJ8qwa_KgPFpoci2MLwJNBQ1KfpU90Vadj3Kv3_SCJ");
+      border-radius: 50%;
+      border: 3px solid #f0e116; }
+
+.nav-items:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-items:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-items:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-items:nth-child(4) {
+  transition-delay: 0.4s; }
+
 * {
   box-sizing: border-box; }
 
@@ -65,7 +135,7 @@ header {
   width: 100%; }
 
 .text-second {
-  color: #086785; }
+  color: #f0e116; }
 
 main {
   padding: 4rem;
@@ -75,7 +145,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #086785;
+        color: #f0e116;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
