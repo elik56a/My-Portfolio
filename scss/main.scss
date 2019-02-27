@@ -123,18 +123,45 @@ main{
     }
 }
 
+//Contact Page
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    div{
+        font-size: 2rem;
+        border:3px solid white;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+        
+        &:hover{
+            padding: 0.8rem 1.5rem;
+            background: $second-color;
+            color: set-text-color($second-color);
+            span{
+                color: set-text-color($second-color);
+            }
+        }
+    }
+}
+
 //Button Style
 .btn{
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
     &:hover{
        background: $second-color; 
        color: set-text-color($second-color);
+       @include easeOut;
     }
 }
 .btn-light{
+    //inherete btn to btn-light
 @extend .btn;
 background: darken($primary-color, 50);
 color:white;
@@ -144,6 +171,9 @@ color:white;
     background: lighten($primary-color, 50);
     color:black;    
 }
+
+
+
 #footer{
  
     text-align: center;
