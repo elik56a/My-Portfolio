@@ -1,9 +1,14 @@
 //Wide Screens
 @include mediaXl{
-    
+    .projects{
+        grid-template-columns:repeat(4,1fr);
+    }
 }
 //Lg Screens
 @include mediaLg{
+    .projects{
+        grid-template-columns:repeat(3,1fr);
+    }
 
 }
 //Tablets Screens
@@ -53,7 +58,10 @@
         grid-template-columns: 1fr;
         
     }
-
+    //Work Page
+    .projects{
+        grid-template-columns:repeat(2,1fr);
+    }
 }
 //Mobile 
 @include mediaSm{
@@ -63,4 +71,9 @@
         }
        
     }
+     //Work Page
+     .projects{
+        grid-template-columns:1fr;
+    }
+
 }

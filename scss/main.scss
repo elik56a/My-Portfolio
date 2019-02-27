@@ -107,6 +107,43 @@ main{
      }
 }
 
+//Work Page
+.projects{
+    display: grid;
+    grid-gap: 0.7rem;;
+    grid-template-columns: repeat(3, 1fr);
+    img{
+        width: 100%;
+        border: 3px solid #fff;
+        &:hover{
+            opacity: 0.5;
+            border:3px solid $second-color;
+            @include easeOut;
+        }
+    }
+}
+
+//Button Style
+.btn{
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover{
+       background: $second-color; 
+       color: set-text-color($second-color);
+    }
+}
+.btn-light{
+@extend .btn;
+background: darken($primary-color, 50);
+color:white;
+}
+.btn-dark{
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color:black;    
+}
 #footer{
  
     text-align: center;
