@@ -1,9 +1,8 @@
-$primary-color:#444;
+$primary-color:rgb(54, 54, 54);
 $second-color: #f0e116;
 $show-home-img:true;
 $home-img:url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
 $background-opacity:0.7;
-
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }
@@ -30,6 +29,14 @@ $background-opacity:0.7;
     }
 }
 
+//Set Text color 
+@function set-text-color ($color){
+  @if(lightness($color) > 40){
+    @return #000;
+  } @else{
+    @return #fff;
+  }
+}
 
 //media query
 
@@ -54,4 +61,3 @@ $background-opacity:0.7;
     @content;
   }
 }
-
