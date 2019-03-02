@@ -33,20 +33,21 @@
         }
     }
     .menu-nav{
-        height: 75vh;
+        height: 70vh;
         transform: translate3d(-100%,0,0);
         font-size: 24px;
     }
     .menu-branding{
-        height:25vh ;
+        height:30vh ;
         transform: translate3d(100%,0,0);
-        .face-img{
-            background: url('');
+        .face{
+            background: url('http://www.interload.co.il/upload/2966841.jpg');
             width: 130px;
             height:130px ;
+            border: 3px solid $second-color;
+        
         }
     }
-
     //About Page Responsive
     .about-info{
         grid-template-areas: 
@@ -64,22 +65,20 @@
     }
 }
 //Mobile 
-@include mediaSm{
-    main{
-        padding: 2rem;
-        #home h1{
-            margin-top: 10vh;
-        }
-     
-        .lg-heading{
-            margin-top:1rem;
-            font-size: 5rem
-        }
-       
+@include mediaSm {
+    main {
+      padding: 2rem;
+      #home h1 {
+        margin-top: 10vh;
+      }
+  
+      .lg-heading {
+        margin-top:1rem;
+        font-size: 5rem;
+      }
     }
-     //Work Page
-     .projects{
-        grid-template-columns:1fr;
+    //work page
+    .projects {
+      grid-template-columns: 1fr;
     }
-
-}
+  }

@@ -1,4 +1,5 @@
 //menu buttons
+
 .btn-menu{
     position: absolute;
     z-index: 3;
@@ -40,7 +41,7 @@
     position: fixed;
     top: 0;
     width:100% ;
-    opacity: 0.9;
+    opacity: 0.95;
     visibility: hidden;
 
    &.show{
@@ -75,6 +76,25 @@
      
    }
 
+ // Branding 50%  Side
+ &-branding {
+    background: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from bottom
+      transform: translate3d(0, 0, 0);
+    }
+
+    .face {
+      width: 250px;
+      height: 250px;
+     background-image: url("http://www.interload.co.il/upload/5115607.jpg");
+      border-radius: 50%;
+      border: solid 3px $second-color;
+    }
+  }
     // transform the links
     .nav-items{
         transform: translate3d(600px,0,0);  
@@ -101,30 +121,7 @@
     }
     }
 
-
-   //branding 50% side
-   &-branding{
-    margin: 0;
-    padding: 0;
-    background: darken($primary-color, 1);
-    transform: translate3d(0,100%,0);  
-   @include easeOut;
-
-    &.show{
-        //slide from the bottom
-        transform: translate3d(0,0,0); 
-        }
-        .face-img{
-            width: 220px;
-            height: 220px;
-            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwisBhLRLJ8qwa_KgPFpoci2MLwJNBQ1KfpU90Vadj3Kv3_SCJ");
-            border-radius: 50%;
-            border: 3px solid $second-color;
-        }
-   }
-  
 }
-
 //delay each nav bar at 0.1s
 @for $i from 1 through 4{
     .nav-items:nth-child(#{$i}){
