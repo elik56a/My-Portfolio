@@ -1,11 +1,17 @@
 //Wide Screens
 @include mediaXl{
+    .navbar .open-slide{
+        display: none;
+    }
     .projects{
         grid-template-columns:repeat(4,1fr);
     }
 }
 //Lg Screens
 @include mediaLg{
+    .navbar ul li{
+        padding: 0 1.5rem;
+    }
     .projects{
         grid-template-columns:repeat(3,1fr);
     }
@@ -13,6 +19,14 @@
 }
 //Tablets Screens
 @include mediaMd{
+
+    .navbar .nav-links{
+        display: none;
+    }
+    .open-bar{
+        display: block;
+        position: fixed;
+    }
     main{
         align-items: center;
         text-align: center;
@@ -66,19 +80,92 @@
 }
 //Mobile 
 @include mediaSm {
-    main {
+        .colored{
+      display: none;
+        }
+        .navbar .open-slide {
+            display: block;
+            position: fixed;
+            top:5px;
+            left: 10px;
+            color: $second-color;
+            background: $second-color;
+            z-index: 2;
+        }
+     
+       
+    #home {
       padding: 2rem;
-      #home h1 {
-        margin-top: 10vh;
-      }
   
       .lg-heading {
         margin-top:1rem;
+        margin: 0  auto;
         font-size: 5rem;
       }
+      .sm-heading{
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: left;
+        width: 100vw;
+      }
+      .icons{
+        //   padding: 0;
+          margin: 0 auto;
+      }
     }
+#about{
+    height: 100%;
+    .lg-heading{
+        font-size: 3.5em;
+    }
+   .container{
+       margin-bottom: 0;
+       padding-bottom: 2rem;
+    .about-info{
+        grid-template-areas: 
+        "info"
+        " bio-img"
+        "skill1 "
+        "skill2 "
+        "skill3";
+        grid-template-columns: 1fr;
+        .bio-img{
+            margin: 0 auto;
+            padding: 0;
+            
+        }
+        .bio{
+            padding: 0;
+            margin: 0 auto;
+        }
+
+    }
+}
+}
     //work page
-    .projects {
-      grid-template-columns: 1fr;
+    #work{
+        height: 100%;
+        .lg-heading{
+            font-size: 3.5rem;
+        }
+        .projects{
+            grid-template-columns: 1fr;
+            grid-gap: 2rem 0;
+            margin: 0  1rem;
+        
+        }
+    
     }
-  }
+
+#contact{
+    height: 100%;
+    .lg-heading{
+        padding: 1rem;
+    }
+    .boxes{
+        margin: 0 1rem;
+    }
+}
+
+
+}

@@ -57,14 +57,14 @@
       height: 250px;
       background-image: url("http://www.interload.co.il/upload/5115607.jpg");
       border-radius: 50%;
-      border: solid 3px #1687f0; }
+      border: solid 3px #531623; }
   .menu .nav-items {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-items.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-items.active > a {
-      color: #1687f0; }
+      color: #531623; }
   .menu .nav-links {
     text-transform: uppercase;
     font-size: 30px;
@@ -73,7 +73,7 @@
     color: #fff;
     transition: all 0.5s ease-out; }
     .menu .nav-links:hover {
-      color: #1687f0;
+      color: #531623;
       transition: all 0.5s ease-out; }
 
 .nav-items:nth-child(1) {
@@ -94,152 +94,346 @@
 body {
   background: black;
   color: #fff;
-  height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 100; }
   body#bg-img {
-    background: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background: url("https://image.freepik.com/free-photo/man-s-hands-typing-laptop-keyboard_1421-549.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; }
+    background-position: center; }
     body#bg-img:after {
       content: '';
       position: absolute;
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 120vh;
       z-index: -1;
-      background: rgba(0, 0, 0, 0.7); }
+      background: rgba(0, 0, 0, 0.2); }
+
+.navbar ul {
+  position: fixed;
+  left: 150px;
+  text-align: center;
+  margin: 1rem auto 50rem 0;
+  width: 80%;
+  height: 45px;
+  border-radius: 5px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1; }
+
+.colored {
+  position: fixed;
+  text-align: center;
+  margin: 0 auto 0.2rem auto;
+  width: 100%;
+  height: 45px;
+  list-style: none;
+  background: white;
+  z-index: 1; }
+  .colored .open-slide {
+    display: none; }
+  .colored .colored a {
+    color: #444; }
+  .colored .colored li a:hover {
+    transition: all 1s;
+    color: #531623; }
+
+li {
+  padding: 4px 2rem;
+  display: inline-block; }
+
+li a {
+  text-decoration: none;
+  color: #e6e6e6;
+  font-size: 1.5rem;
+  transition: all 1s; }
+
+li a:hover {
+  transition: all 1s;
+  color: #531623; }
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(116, 113, 108, 0.568);
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 100px;
+  transition: 0.8s; }
+
+.side-menu a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  transition: 0.8s; }
+
+.side-menu a:hover {
+  transition: all 0.2s;
+  color: #531623; }
+
+#close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 2.5rem; }
+
+#bg-img {
+  transition: margin-left 0.8s;
+  overflow-x: hidden;
+  width: 100%; }
 
 h1, h2, h3 {
-  margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(5, 5, 5, 0.5);
-    border-radius: 10px; }
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    margin: 15px auto;
+    padding: 0 1rem;
+    width: 45vw;
+    text-align: center; }
 
 a {
   color: #fff;
   text-decoration: none; }
 
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
 .text-second {
-  color: #1687f0; }
+  color: #531623; }
 
-main {
-  padding: 4rem;
-  min-height: calc(100vh- 40px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
+#home {
+  height: 111vh;
+  overflow: hidden; }
+  #home .icons {
+    margin: 0.1rem 5rem;
+    padding-left: 65%; }
+    #home .icons a {
       padding: 0.4rem; }
-      main .icons a:hover {
-        color: #1687f0;
+      #home .icons a:hover {
+        color: #531623;
         transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+  #home h1 {
+    margin-top: 20vh;
+    position: relative;
+    top: auto;
+    left: 11%; }
+  #home span {
+    position: absolute;
+    top: 62%;
+    left: 20%; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bioimg bio bio' 'job1 job2 job3 ';
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-img {
-    grid-area: bioimg;
-    margin: auto;
-    border-radius: 50%;
-    border: 3px solid #1687f0; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #0f0f0f;
-    padding: 0.5rem;
-    border-bottom: #1687f0 5px solid; }
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
+#about {
+  background: rgba(167, 60, 60, 0.5);
+  height: 120vh;
+  width: 100%; }
+  #about .lg-heading {
+    font-family: 'Lobster', cursive;
+    color: #272727;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding: 2.5rem 0 1.8rem  0;
+    height: 5px;
+    text-align: center; }
+  #about .container {
     width: 100%;
-    height: 220px;
-    border: 3px solid #fff; }
-    .projects img:hover {
-      opacity: 0.5;
-      border: 3px solid #1687f0;
+    height: 100%;
+    margin: 2rem auto;
+    background: rgba(143, 180, 185, 0.363); }
+    #about .container .about-info {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-areas: 'info info bio-img' 'skill1 skill2 skill3';
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 1.3rem;
+      margin: 0 2rem;
+      padding: 0 1rem;
+      line-height: 1.7;
+      text-align: center; }
+      #about .container .about-info h3 {
+        text-transform: uppercase; }
+      #about .container .about-info .bio {
+        grid-area: info;
+        padding-left: 1.5rem;
+        font-size: 1.5rem; }
+      #about .container .about-info .bio-img {
+        grid-area: bio-img;
+        border-radius: 50%;
+        border: 3px solid #531623;
+        margin: 0 0 3rem 4rem;
+        display: inline;
+        filter: grayscale(0%);
+        transition: all 1000ms;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px #333; }
+      #about .container .about-info .bio-img:hover {
+        filter: grayscale(50%);
+        transition: all 1000ms;
+        border-radius: 40%; }
+      #about .container .about-info .skill-1 {
+        grid-template: skill1; }
+      #about .container .about-info .skill-2 {
+        grid-template: skill2; }
+      #about .container .about-info .skill-3 {
+        grid-template: skill3; }
+      #about .container .about-info .skills {
+        border-radius: 2px;
+        color: #d6d4d4;
+        background: rgba(27, 27, 27, 0.932);
+        padding: 0.5rem 1rem 0.2rem 1rem;
+        border-bottom: #531623 5px solid;
+        border-top: #531623 5px solid;
+        box-shadow: 5px 5px 10px #333; }
+        #about .container .about-info .skills h3 {
+          color: #fff1d6;
+          margin: 0;
+          padding: 0; }
+        #about .container .about-info .skills p {
+          margin: 0;
+          padding: 0.5rem; }
+        #about .container .about-info .skills .skill-icon {
+          font-size: 18px;
+          border-radius: 50%; }
+
+#work {
+  height: 100%;
+  color: black;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3); }
+  #work .bg-image {
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2017/06/29/01/02/home-office-2452806_960_720.jpg ");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6; }
+  #work .lg-heading {
+    margin: 0;
+    padding: 2rem 0 0.5rem 0;
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    color: #272727; }
+  #work .projects {
+    height: 100%;
+    margin: 0 4rem 0rem 4rem;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 2rem 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 4rem; }
+    #work .projects .item {
+      width: 100%;
+      height: 100%;
+      background: rgba(14, 14, 14, 0.767);
+      color: #dadada; }
+    #work .projects .project-title {
+      margin: 1rem 0 0 0;
+      padding: 0; }
+    #work .projects .project-desc {
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      margin: 0.2rem;
+      text-align: left; }
+    #work .projects img {
+      box-shadow: 5px 5px 10px #333;
+      width: 100%;
+      height: 220px;
+      border: 3px solid #fff;
       transition: all 0.5s ease-out; }
+      #work .projects img:hover {
+        opacity: 0.7;
+        border: 3px solid #531623;
+        transition: all 0.5s ease-out; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px solid white;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.8rem 1.5rem;
-      background: #1687f0;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
-
-.btn, .btn-light, .btn-dark {
-  display: block;
-  padding: 0.3rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-light:hover, .btn-dark:hover {
-    background: #1687f0;
-    color: #000;
+.btn {
+  background-color: #cecece;
+  color: black;
+  border: 2px solid #531623;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1.5rem 0;
+  text-align: center;
+  box-shadow: 5px 5px 10px #333;
+  transition: all 0.5s ease-out; }
+  .btn:hover {
+    background: #531623;
+    color: #fff;
     transition: all 0.5s ease-out; }
 
-.btn-light {
-  background: black;
-  color: white; }
-
-.btn-dark {
-  background: gray;
-  color: black; }
+#contact {
+  height: 100vh;
+  background: rgba(141, 104, 104, 0.199); }
+  #contact .lg-heading {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    color: #272727;
+    margin: 0;
+    padding: 8rem 0 0 0; }
+  #contact .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0 0 0; }
+    #contact .boxes div {
+      box-shadow: 5px 5px 10px #333;
+      font-size: 2rem;
+      border: 3px solid #272727;
+      color: #272727;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      transition: all 0.5s ease-out; }
+      #contact .boxes div:hover {
+        padding: 0.8rem 1.5rem;
+        background: #531623;
+        color: #fff; }
+        #contact .boxes div:hover span {
+          color: #fff; }
 
 #footer {
   text-align: center;
-  padding: 1rem;
-  height: 40px;
-  background: black;
-  color: #fff; }
+  width: 100%;
+  height: 50px;
+  background: #444;
+  margin: auto;
+  padding: 1rem; }
 
 @media screen and (min-width: 117px) and (max-width: 1600px) {
+  .navbar .open-slide {
+    display: none; }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 760px) and (max-width: 1170px) {
+  .navbar ul li {
+    padding: 0 1.5rem; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 760px) {
+  .navbar .nav-links {
+    display: none; }
+  .open-bar {
+    display: block;
+    position: fixed; }
   main {
     align-items: center;
     text-align: center; }
@@ -265,20 +459,64 @@ main {
       background: url("http://www.interload.co.il/upload/2966841.jpg");
       width: 130px;
       height: 130px;
-      border: 3px solid #1687f0; }
+      border: 3px solid #531623; }
   .about-info {
     grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
-  main {
+@media screen and (max-width: 600px) {
+  .colored {
+    display: none; }
+  .navbar .open-slide {
+    display: block;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    color: #531623;
+    background: #531623;
+    z-index: 2; }
+  #home {
     padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
-    main .lg-heading {
+    #home .lg-heading {
       margin-top: 1rem;
+      margin: 0  auto;
       font-size: 5rem; }
-  .projects {
-    grid-template-columns: 1fr; } }
+    #home .sm-heading {
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: left;
+      width: 100vw; }
+    #home .icons {
+      margin: 0 auto; }
+  #about {
+    height: 100%; }
+    #about .lg-heading {
+      font-size: 3.5em; }
+    #about .container {
+      margin-bottom: 0;
+      padding-bottom: 2rem; }
+      #about .container .about-info {
+        grid-template-areas: "info" " bio-img" "skill1 " "skill2 " "skill3";
+        grid-template-columns: 1fr; }
+        #about .container .about-info .bio-img {
+          margin: 0 auto;
+          padding: 0; }
+        #about .container .about-info .bio {
+          padding: 0;
+          margin: 0 auto; }
+  #work {
+    height: 100%; }
+    #work .lg-heading {
+      font-size: 3.5rem; }
+    #work .projects {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem 0;
+      margin: 0  1rem; }
+  #contact {
+    height: 100%; }
+    #contact .lg-heading {
+      padding: 1rem; }
+    #contact .boxes {
+      margin: 0 1rem; } }

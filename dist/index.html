@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Poppins|Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -13,60 +14,39 @@
 </head>
 
 <body id='bg-img'>
-    <header>
-        <div class="btn-menu">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
 
-        <nav class="menu">
+    <div class="wapper">
+        <nav class="navbar" id='navbar'>
+            <div class="open-slide">
 
-            <div class="menu-branding">
-                <div class="face">
-                </div>
+                <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-2x open-bar"></i></a>
             </div>
-
-            <ul class="menu-nav">
-                <li class="nav-items active">
-                    <a href="index.html" class="nav-links ">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-items">
-                    <a href="about.html" class="nav-links">
-                        About Me
-                    </a>
-                </li>
-                <li class="nav-items">
-                    <a href="work.html" class="nav-links">
-                        My Work
-                    </a>
-                </li>
-                <li class="nav-items">
-                    <a href="contact.html" class="nav-links">
-                        Contact Me
-                    </a>
-                </li>
+            <ul class="nav-links colored">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main id="home">
+    </div>
+
+    <div class="side-menu" id="side-nav">
+        <a href="#" onclick="closeSlideMenu()" class="btn-close" id='close'>&times</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#work">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section id="home">
         <h1 class="lg-heading">
             Eliyahu <span class="text-second">Kriel</span>
         </h1>
         <h2 class="sm-heading">
             Full Stack Web Developer And Programmer
         </h2>
-
         <div class="icons">
-            <a href="">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
             <a href="https://www.linkedin.com/in/eliyahu-kriel-60767817a">
                 <i class="fab fa-linkedin fa-2x"></i>
             </a>
@@ -74,10 +54,145 @@
                 <i class="fab fa-github fa-2x"></i>
             </a>
         </div>
-    </main>
+    </section>
 
 
+    <section id="about">
+        <div class=" container">
+            <h1 class="lg-heading"> About Me </h1>
+            <div class="about-info">
+                <img src="../imgs//face-big.jpg" alt="Eliyahu Kriel" class="bio-img" width="250" height="250px">
+                <div class=" bio">
+                    <p>My name is Eliyahu Kriel. I've always had a passion for computers and Internet,
+                        and today I
+                        am
+                        developing Internet applications. I'm looking for my next development challenge, and
+                        I'll be happy to hear suggestions from you.</p>
+                </div>
+                <div class="skills skill-1">
+                    <h3>My development skills</h3>
+                    <p>Specializing in new technologies, including ReactJS, NodeJs, ExpressJs, MongoDB, JavaScript &
+                        ES6, Html,Css, Sass, Bootstrap, and more! </p>
+                    <img class='skill-icon' src="https://img.icons8.com/color/48/000000/javascript.png">
+                    <img class='skill-icon'
+                        src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" alt="" width="48"
+                        height="48">
+                    <img class='skill-icon' src="https://img.icons8.com/color/48/000000/nodejs.png">
+                    <img class='skill-icon' src="https://img.icons8.com/color/48/000000/html-5.png">
+                    <img class='skill-icon' src="https://img.icons8.com/color/48/000000/css3.png">
+                </div>
+                <div class="skills skill-2">
+                    <h3>Why Me?</h3>
+                    <p>
+                        Because I am Fast and independent learner, Team Player, Committed to work, and Highly
+                        Motivated.
+                    </p>
+                    <br>
+                    <div class='skill-icon'><i class="fas fa-laptop-code fa-2x"></i></div>
+                </div>
+                <div class="skills skill-3">
+                    <h3>What Now?</h3>
+                    <p>
+                        Now is your time to test me, you can see down the latest projects I've done and be impressed by
+                        them.
+                    </p>
+                    <br>
+                    <img class='skill-icon' src="https://img.icons8.com/color/48/000000/source-code.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="bg-image"></div>
+        <h1 class="lg-heading">
+            My Projects
+        </h1>
+        <div class="projects">
+            <div class="item">
+                <a href="https://doclive-chat.herokuapp.com/" target="_blank">
+                    <img src="../imgs/doclive.jpg" alt="Project">
+                </a>
+                <h2 class="project-title"> DocLive</h2>
+                <p class="project-desc">DocLive is Video chat between physicians. <br>
+                    <strong>Technologies:</strong> ReactJs & WebRTC .
+                </p>
+                <a href="https://doclive-chat.herokuapp.com/" target="_blank" class="btn">
+                    <i class="fas fa-laptop-code"></i> View Project
+                </a>
+                <a href="https://github.com/elik56a/react-video-chat" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> Github
+                </a>
+
+            </div>
+            <div class="item">
+                <a href="https://still-gorge-17796.herokuapp.com" target="_blank">
+                    <img src="../imgs//i_camp.jpg" alt="Project">
+                </a>
+                <h2 class="project-title"> I-Camp</h2>
+                <p class="project-desc">
+                    A social camping site. <br>
+                    <strong>Technologies:</strong> Html,Css,JS, NodeJS, Express, MongoDB.
+                </p>
+                <a href="https://still-gorge-17796.herokuapp.com" target="_blank" class="btn">
+                    <i class="fas fa-laptop-code"></i> View Project
+                </a>
+                <a href="https://github.com/elik56a/I-Camp" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://fushick-kitchen.netlify.com" target="_blank">
+                    <img src="../imgs/fushick.jpg" alt="Project">
+                </a>
+                <h2 class="project-title"> Fushick Kitchen</h2>
+                <p class="project-desc">
+                    Fusick Kitchen is a Recipes Site <br>
+                    <strong>Technologies:</strong> ReactJs, React-Router,Css,Html,JSX, And More
+                </p>
+                <a href="https://fushick-kitchen.netlify.com" target="_blank" class="btn">
+                    <i class="fas fa-laptop-code"></i> View Project
+                </a>
+                <a href="https://github.com/elik56a/fushick-kitchen" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1 class="lg-heading">
+            Contact Me
+        </h1>
+        <div class="boxes">
+            <div>
+                <span class="text-second">Email:</span>
+                elik56a@gmail.com
+            </div>
+
+            <div>
+                <span class="text-second">Phone:</span>
+                054-487-8008
+            </div>
+            <div>
+                <span class="text-second">Adress:</span>
+                Revava, 217 Hararei Kedem St, Israel
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        Eliyahu Kriel ©. All rights reserved.
+    </footer>
 </body>
+
+
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="js/main.js"></script>
+
 
 </html>
