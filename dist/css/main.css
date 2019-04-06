@@ -308,11 +308,10 @@ a {
 #work {
   height: 100%;
   color: black;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3); }
+  text-align: center; }
   #work .bg-image {
     position: absolute;
-    background: url("https://cdn.pixabay.com/photo/2017/06/29/01/02/home-office-2452806_960_720.jpg ");
+    background: url("https://images.unsplash.com/photo-1516116412344-6663387e8590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
