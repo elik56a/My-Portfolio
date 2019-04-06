@@ -2,7 +2,7 @@ $primary-color:rgb(0, 0, 0);
 $second-color: #531623;
 $show-home-img:true;
 $home-img:url("https://image.freepik.com/free-photo/man-s-hands-typing-laptop-keyboard_1421-549.jpg");
-$background-opacity:0.2;
+$background-opacity:0.1;
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }
