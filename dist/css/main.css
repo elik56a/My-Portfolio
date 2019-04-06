@@ -369,8 +369,8 @@ a {
           margin: 0 auto; }
   #work {
     height: 100%; }
-    #work .bio-img {
-      height: 200vh; }
+    #work .bg-image {
+      height: 260vh; }
     #work .lg-heading {
       font-size: 4.2rem;
       padding: 0.3rem; }
