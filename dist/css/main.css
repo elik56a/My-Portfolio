@@ -328,7 +328,8 @@ a {
 
 @media screen and (max-width: 600px) {
   body {
-    background: #444; }
+    background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
+    color: #fff; }
   .colored {
     display: none; }
   .navbar .open-slide {
