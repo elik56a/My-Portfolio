@@ -13,17 +13,6 @@ body {
   line-height: 1.5;
   font-weight: 100; }
 
-.bg-image-home {
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background: rgba(51, 51, 51, 0.568); }
-
 .navbar ul {
   position: fixed;
   left: 150px;
@@ -339,7 +328,7 @@ a {
 
 @media screen and (max-width: 600px) {
   body {
-    background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
+    background: url("https://ibb.co/TbK53yr");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
