@@ -99,7 +99,7 @@ body {
   line-height: 1.5;
   font-weight: 100; }
   body#bg-img {
-    background: url("https://image.freepik.com/free-photo/man-s-hands-typing-laptop-keyboard_1421-549.jpg");
+    background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -426,44 +426,6 @@ a {
     padding: 0 1.5rem; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 760px) {
-  .navbar .nav-links {
-    display: none; }
-  .open-bar {
-    display: block;
-    position: fixed; }
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 70vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 30vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .face {
-      background: url("http://www.interload.co.il/upload/2966841.jpg");
-      width: 130px;
-      height: 130px;
-      border: 3px solid #531623; }
-  .about-info {
-    grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 600px) {
   .colored {

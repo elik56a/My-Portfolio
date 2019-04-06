@@ -17,67 +17,10 @@
     }
 
 }
-//Tablets Screens
-@include mediaMd{
+// //Tablets Screens
+// @include mediaMd{
 
-    .navbar .nav-links{
-        display: none;
-    }
-    .open-bar{
-        display: block;
-        position: fixed;
-    }
-    main{
-        align-items: center;
-        text-align: center;
-        
-        .lg-heading{
-            line-height: 1;
-            margin-bottom:1rem; 
-        }
-    }
-    ul.menu-nav,
-   div.menu-branding {
-        float: none;
-        width: 100%;
-        min-height:0;
-
-        &.show{
-            transform: translate3d(0,0,0);
-        }
-    }
-    .menu-nav{
-        height: 70vh;
-        transform: translate3d(-100%,0,0);
-        font-size: 24px;
-    }
-    .menu-branding{
-        height:30vh ;
-        transform: translate3d(100%,0,0);
-        .face{
-            background: url('http://www.interload.co.il/upload/2966841.jpg');
-            width: 130px;
-            height:130px ;
-            border: 3px solid $second-color;
-        
-        }
-    }
-    //About Page Responsive
-    .about-info{
-        grid-template-areas: 
-        'bioimg'
-        'bio'
-        'job1'
-        'job2'
-        'job3';
-        grid-template-columns: 1fr;
-        
-    }
-    //Work Page
-    .projects{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
+// }
 //Mobile 
 @include mediaSm {
         .colored{
