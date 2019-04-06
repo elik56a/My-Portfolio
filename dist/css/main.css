@@ -2,18 +2,16 @@
   box-sizing: border-box; }
 
 body {
-  background: black;
+  background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
   color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   margin: 0;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
   font-weight: 100; }
-  body#bg-img {
-    background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; }
 
 .navbar ul {
   position: fixed;
@@ -329,8 +327,6 @@ a {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 600px) {
-  body {
-    background: #444; }
   .colored {
     display: none; }
   .navbar .open-slide {
