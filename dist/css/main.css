@@ -328,7 +328,7 @@ a {
 
 @media screen and (max-width: 600px) {
   body {
-    background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
+    background: url("https://images.unsplash.com/photo-1553532070-e2c5714303e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
     color: #fff; }
   .colored {
     display: none; }
