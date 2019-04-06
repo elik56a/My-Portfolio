@@ -3,7 +3,7 @@
 
 body {
   background: url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
-  color: #fff;
+  color: #FFF;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -272,7 +272,7 @@ a {
   transition: all 0.5s ease-out; }
   .btn:hover {
     background: #531623;
-    color: #fff;
+    color: set-text-color(#531623);
     transition: all 0.5s ease-out; }
 
 #contact {
@@ -302,9 +302,9 @@ a {
       #contact .boxes div:hover {
         padding: 0.8rem 1.5rem;
         background: #531623;
-        color: #fff; }
+        color: set-text-color(#531623); }
         #contact .boxes div:hover span {
-          color: #fff; }
+          color: set-text-color(#531623); }
 
 #footer {
   text-align: center;
@@ -329,7 +329,6 @@ a {
 @media screen and (max-width: 600px) {
   body {
     background: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-    color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

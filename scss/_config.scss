@@ -1,47 +1,22 @@
 $primary-color:rgb(0, 0, 0);
 $second-color: #531623;
-$show-home-img:true;
-$home-img:url("https://cdn1.imggmi.com/uploads/2019/4/6/776ea534137a52a5f6267366a236b46f-full.jpg");
-$background-opacity:0.1;
+
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }
 @mixin  box-shadow {
  box-shadow:5px 5px 10px #333;
 }
-@mixin  background {
-    @if $show-home-img{
-      &#bg-img{
-          background: $home-img;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-attachment:fixed;
-          background-position: center; 
-          
-          // //sudo elemnt for background opacity
-          // &:after{
-          // content: '';
-          // position: absolute;
-          // top: 0;
-          // right: 0;
-          // width: 100%;
-          // height: 120vh;
-          // z-index: -1;
-          // background:rgba($primary-color,$background-opacity) ;
-        // }
-      }
-     
-    }
-}
 
-//Set Text color 
-@function set-text-color ($color){
-  @if(lightness($color) > 40){
-    @return #000;
-  } @else{
-    @return #fff;
-  }
-}
+
+// //Set Text color 
+// @function set-text-color ($color){
+//   @if(lightness($color) > 40){
+//     @return #000;
+//   } @else{
+//     @return #fff;
+//   }
+// }
 
 //media query
 
