@@ -1,93 +1,3 @@
-.btn-menu {
-  position: absolute;
-  z-index: 3;
-  right: 25px;
-  top: 35px;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
-  .btn-menu .btn-line {
-    width: 28px;
-    height: 3px;
-    margin-bottom: 5px;
-    background: #fff;
-    transition: all 0.5s ease-out; }
-  .btn-menu.close {
-    transform: rotate(180deg); }
-    .btn-menu.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .btn-menu.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .btn-menu.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
-
-.menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0.95;
-  visibility: hidden; }
-  .menu.show {
-    visibility: visible; }
-  .menu-branding, .menu-nav {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden; }
-  .menu-nav {
-    margin: 0;
-    padding: 0;
-    background: black;
-    list-style: none;
-    transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
-    .menu-nav.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-branding {
-    background: black;
-    transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
-    .menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-    .menu-branding .face {
-      width: 250px;
-      height: 250px;
-      background-image: url("http://www.interload.co.il/upload/5115607.jpg");
-      border-radius: 50%;
-      border: solid 3px #531623; }
-  .menu .nav-items {
-    transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
-    .menu .nav-items.show {
-      transform: translate3d(0, 0, 0); }
-    .menu .nav-items.active > a {
-      color: #531623; }
-  .menu .nav-links {
-    text-transform: uppercase;
-    font-size: 30px;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: #fff;
-    transition: all 0.5s ease-out; }
-    .menu .nav-links:hover {
-      color: #531623;
-      transition: all 0.5s ease-out; }
-
-.nav-items:nth-child(1) {
-  transition-delay: 0.1s; }
-
-.nav-items:nth-child(2) {
-  transition-delay: 0.2s; }
-
-.nav-items:nth-child(3) {
-  transition-delay: 0.3s; }
-
-.nav-items:nth-child(4) {
-  transition-delay: 0.4s; }
-
 * {
   box-sizing: border-box; }
 
@@ -104,15 +14,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 120vh;
-      z-index: -1;
-      background: rgba(0, 0, 0, 0.1); }
 
 .navbar ul {
   position: fixed;
@@ -428,6 +329,8 @@ a {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 600px) {
+  body {
+    background: #444; }
   .colored {
     display: none; }
   .navbar .open-slide {
@@ -435,8 +338,6 @@ a {
     position: fixed;
     top: 5px;
     left: 10px;
-    color: #531623;
-    background: #531623;
     z-index: 2; }
   #home {
     padding: 5rem 0 0 0; }
@@ -462,7 +363,8 @@ a {
       padding-bottom: 2rem; }
       #about .container .about-info {
         grid-template-areas: "info" " bio-img" "skill1 " "skill2 " "skill3";
-        grid-template-columns: 1fr; }
+        grid-template-columns: 1fr;
+        margin: 0 1rem; }
         #about .container .about-info .bio-img {
           margin: 0 auto;
           padding: 0; }
@@ -486,4 +388,4 @@ a {
       padding: 0.3rem;
       font-size: 4.2rem; }
     #contact .boxes {
-      margin: 0 1rem; } }
+      margin: 0 1.5rem; } }

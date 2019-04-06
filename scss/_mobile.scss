@@ -23,6 +23,9 @@
 // }
 //Mobile 
 @include mediaSm {
+    body{
+        background: #444;
+    }
         .colored{
       display: none;
         }
@@ -31,8 +34,6 @@
             position: fixed;
             top:5px;
             left: 10px;
-            color: $second-color;
-            background: $second-color;
             z-index: 2;
         }
      
@@ -75,6 +76,7 @@
         "skill2 "
         "skill3";
         grid-template-columns: 1fr;
+        margin: 0 1rem;
         .bio-img{
             margin: 0 auto;
             padding: 0;
@@ -114,7 +116,7 @@
         font-size: 4.2rem;
     }
     .boxes{
-        margin: 0 1rem;
+        margin: 0 1.5rem;
     }
 }
 
