@@ -330,10 +330,7 @@ a {
   body {
     background: url("https://image.shutterstock.com/z/stock-photo-close-up-of-an-unrecognizable-businesswoman-typing-on-a-keyboard-while-sitting-in-an-office-666569623.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 0; }
+    background-repeat: no-repeat; }
   .colored {
     display: none; }
   .navbar .open-slide {
