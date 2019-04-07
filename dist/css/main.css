@@ -217,7 +217,6 @@ a {
     opacity: 0.6; }
   #work .lg-heading {
     margin: 0;
-    padding: 2rem 0 0.5rem 0;
     font-family: 'Lobster', cursive;
     font-size: 5rem;
     color: #272727; }
@@ -273,7 +272,7 @@ a {
 
 #contact {
   height: 100vh;
-  background: rgba(141, 104, 104, 0.199); }
+  background: rgba(134, 134, 134, 0.822); }
   #contact .lg-heading {
     text-align: center;
     font-family: 'Lobster', cursive;
@@ -308,7 +307,8 @@ a {
   height: 50px;
   background: #444;
   margin: auto;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #fff; }
 
 @media screen and (min-width: 117px) and (max-width: 1600px) {
   .navbar .open-slide {
@@ -373,7 +373,7 @@ a {
   #work {
     height: 100%; }
     #work .bg-image {
-      height: 150VH; }
+      height: 100%; }
     #work .lg-heading {
       font-size: 4.2rem;
       padding: 0.3rem; }

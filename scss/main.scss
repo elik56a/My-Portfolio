@@ -313,7 +313,7 @@ color:$second-color;
 
     .lg-heading{
         margin: 0;
-        padding: 2rem 0 0.5rem 0;
+        // padding: 2rem 0 0.5rem 0;
         font-family: 'Lobster', cursive;
         font-size: 5rem;
         color:rgb(39, 39, 39);
@@ -386,7 +386,7 @@ color:$second-color;
 //Contact Page
 #contact{
     height:100vh;
-    background: rgba(141, 104, 104, 0.199);
+    background: rgba(134, 134, 134, 0.822);
     .lg-heading{
         text-align: center;
         font-family: 'Lobster', cursive;
@@ -432,6 +432,7 @@ color:$second-color;
     background: #444;
     margin: auto;
     padding: 1rem;
+    color: #fff;
     
 }
 
