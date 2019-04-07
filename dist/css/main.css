@@ -112,7 +112,7 @@ a {
   color: #531623; }
 
 #home {
-  height: 111vh;
+  height: 100vh;
   overflow: hidden; }
   #home .icons {
     margin: 0.1rem 5rem;
@@ -208,17 +208,6 @@ a {
   height: 100%;
   color: black;
   text-align: center; }
-  #work .bg-image {
-    position: absolute;
-    background: url("https://images.unsplash.com/photo-1516116412344-6663387e8590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.6; }
   #work .lg-heading {
     margin: 0;
     padding: 2rem 0 0.5rem 0;
