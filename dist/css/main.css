@@ -325,7 +325,6 @@ a {
 @media screen and (max-width: 600px) {
   body {
     background-image: url("https://image.shutterstock.com/z/stock-photo-close-up-of-an-unrecognizable-businesswoman-typing-on-a-keyboard-while-sitting-in-an-office-666569623.jpg");
-    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -370,17 +369,15 @@ a {
         #about .container .about-info .bio {
           padding: 0;
           margin: 0 auto; }
-  #work {
-    height: 100%; }
-    #work .bg-image {
-      height: 100%; }
-    #work .lg-heading {
-      font-size: 4.2rem;
-      padding: 0.3rem; }
-    #work .projects {
-      grid-template-columns: 1fr;
-      grid-gap: 2rem 0;
-      margin: 0  1rem; }
+  #work .bg-image {
+    height: 33%; }
+  #work .lg-heading {
+    font-size: 4.2rem;
+    padding: 0.3rem; }
+  #work .projects {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem 0;
+    margin: 0  1rem; }
   #contact {
     height: 100%; }
     #contact .lg-heading {
